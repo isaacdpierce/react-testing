@@ -112,3 +112,18 @@ ULTIMATE BENEFIT OF SEZIA - Skincare shopping is FUN again!
 ## beforeEach
 
 - Jest provides this helper method to setup common test logic with a single file
+
+## Simulating events in the JSDOM
+
+- when writing a test that tests any kind state change within the DOM:
+
+1. Find the element
+2. Simulate the change event
+3. Provide a fake event object
+4. Force the component to update
+5. Assert that the element's value has changed
+
+## describe()
+
+- Jest function that allows which creates code block for grouping together tests that have common set up or teardown
+- can limit the scope of beforeEach afterEach statements
