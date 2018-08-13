@@ -127,3 +127,9 @@ ULTIMATE BENEFIT OF SEZIA - Skincare shopping is FUN again!
 
 - Jest function that allows which creates code block for grouping together tests that have common set up or teardown
 - can limit the scope of beforeEach afterEach statements
+
+## Redux
+
+### reducers
+
+- index.js houses the combine reducers call - which takes all reducers and combines them together into a single object
