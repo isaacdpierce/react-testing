@@ -8,6 +8,13 @@
 4. Jest - Automated test runner
 5. JSDOM - javascript code implementation (Libray) which simulates a browser in the command line to run tests - it will create fake HTML elements inside the terminal to be tested by Jest
 
+## .env
+
+- **.env** file with alteration to change file path for all imports to absolute rather than relative
+- absolute path is based from the src file
+- relative path is based from the file I am currently
+- **SETTINGS** 1) create .env fille in root directory 2) add: NODE_PATH=src/
+
 ## React side - 3 Components
 
 1. App component - Holds all other components
@@ -101,3 +108,7 @@ ULTIMATE BENEFIT OF SEZIA - Skincare shopping is FUN again!
       1) Static renderer -  renders the given component and return plain HTML
       2) Shallow renderer - function - renders **just** the given component and none of its React Dom Component children - It **will** render vanilla DOM elements - HTML
       3) Full DOM renderer - Renders an instance of the full component and **all** of it's children + let's us modify it afterwards - can simulate click events or any other DOM interactivity
+
+## beforeEach
+
+- Jest provides this helper method to setup common test logic with a single file
