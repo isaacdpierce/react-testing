@@ -133,3 +133,13 @@ ULTIMATE BENEFIT OF SEZIA - Skincare shopping is FUN again!
 ### reducers
 
 - index.js houses the combine reducers call - which takes all reducers and combines them together into a single object
+
+## Unit tests
+
+- isolate a tiny part of the application and test it's functionality
+- touches very few parts of the app in a single test
+
+## Integration tests
+
+- Simultaneously test many different parts at once
+- touches many parts of the app with a single test
