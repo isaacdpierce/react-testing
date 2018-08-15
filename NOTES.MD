@@ -143,3 +143,38 @@ ULTIMATE BENEFIT OF SEZIA - Skincare shopping is FUN again!
 
 - Simultaneously test many different parts at once
 - touches many parts of the app with a single test
+
+## Higher Order Components
+
+- A React Component specifically made to help us reuse code within an application
+- Then combine them together with normal components
+- Normal component + Higher Order Component = Enhanced (Composed) Component
+- eg. the connect component from the redux library - adds functionality to a regular component when imported
+- Create higher order component files with a lowercase start. (Uppercase start is, by convention, held for Class components )
+
+## Enhanced (Composed) Component
+
+- Has additional functionality donated to it by the Higher Order Component
+
+## BrowserRouter
+
+- Wrap the app component in BrowserRouter
+- it tells React Router what information to show on screen based on the url the user is currently looking at
+
+## Higher order Component for this APP
+
+- GOAL - to restrict use to the post route if the user is not signed in
+- If the user tries to access the post route they will automatically do redirected to the home route
+
+## Steps for creating a Higher Order Component
+
+1. Write the logic I want to reuse in the regular Component
+2. Create a HOC file and add the HOC scaffold
+3. Move the reusable logic into the HOC file
+4. pass props / config behavior through to child Component
+
+## React Router library
+
+- anytime a component is rendered by the React router Library we get access to the this.props.history object
+- this.props.history lets us programmatically navigate through the App with .push()
+- then I add the route I want to navigate to in the .push() method -> eg. this.props.history.push('/comments')
