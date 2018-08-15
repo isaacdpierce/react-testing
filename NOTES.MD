@@ -178,3 +178,15 @@ ULTIMATE BENEFIT OF SEZIA - Skincare shopping is FUN again!
 - anytime a component is rendered by the React router Library we get access to the this.props.history object
 - this.props.history lets us programmatically navigate through the App with .push()
 - then I add the route I want to navigate to in the .push() method -> eg. this.props.history.push('/comments')
+
+## Middleware
+
+- eg reduxPromise
+- takes an action from dispatch and does something to it (stops, delays, etc) before it is sent to the reducer
+- can chain together as many middleWares as wanted to change actions
+- once a promise is resolved we send it back through all the middleWares to see if the changes need other middleWares to acknowledge
+- a series of functions embedded into each other that return each other
+
+## dispatch function
+
+- takes in the action and distributes it to middlewares, reducers etc.
